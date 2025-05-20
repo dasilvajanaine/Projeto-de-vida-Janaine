@@ -78,11 +78,28 @@ body {
         border-radius: 0 40px 0 0;
     }
 }
- .abas-textos {
-    background-color: var(--cor-de-fundo);
- }
 
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
 
- .aba-conteudo{ 
-    display: ;
- }
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
