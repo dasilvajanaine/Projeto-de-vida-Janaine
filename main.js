@@ -14,8 +14,8 @@ for (let i = 0; i < botoes.length; i++) {
     };
 }
 
-const contadores = document.querySelectorAll(" contador");
-const tempoobjetivo1 = new.date("2025-12-19T00:00:");
-let tempoatual = new.date();
+const contadores = document.querySelectorAll(" .contador");
+const tempoobjetivo1 = new date("2025-12-19T00:00:");
+let tempoatual = new date();
 
 contadores(0); textcontent = tempoobjetivo1 - tempoatual;
