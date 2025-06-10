@@ -37,9 +37,9 @@ function calculaTempo(tempoObjetivo) {
     return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos "); 
 }
 
-function atualizaCronometro (){
+function atualizaCronometro(){
     for(let i=0; i<contadores.length; i++){
-        contadores[i].textContent= calculaTempo(tempos[1]);
+        contadores[i].textContent= calculaTempo(tempos[i]);
     }
 }
 
