@@ -14,35 +14,22 @@ for (let i = 0; i < botoes.length; i++) {
     };
 }
 
-const contadores = document.querySelectorAll(" .contador");
-<<<<<<< HEAD
-const tempoobjetivo1 = new date("2025-12-19T00:00:00");
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2025-09-10T00:00:00");
 
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
 
-contadores(0); textcontent = calculatempo(tempoobjetivo); 
+function calculaTempo(tempoObjetivo) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObjetivo - tempoAtual;
+    let segundos = Math.floor(tempoFinal / 1000);
+    let minutos = Math.floor(segundos / 60);
+    let horas = Math.floor(minutos / 60);
+    let dias = Math.floor(horas / 24);
 
-function calculatempo(tempoobjetivo1);
-=======
-const tempoObjetivo1 = new date("2025-12-19T00:00:00");
->>>>>>> 63a9b09c2f6f6d97e8e7b41a347dfb75186c029d
-let tempoatual = new date();
-let tempofinal =tempoobjetivo-tempoatual;
-let segundos = math.floor( tempofinal /1000); 
-let minutos = math.floor( segundos /60);
-let horas = math.floor(minutos /60);
-let dias = math.floor(horas /60);
+    segundos %= 60;
+    minutos %= 60;
+    horas %= 24;
 
-<<<<<<< HEAD
-=======
-contadores(0); textcontent = tempoObjetivo1 - tempoatual;
->>>>>>> 63a9b09c2f6f6d97e8e7b41a347dfb75186c029d
-
-seundos *= 60;
-minutos *= 60;
-horas *= 24;
-
-return(dias + "dias" + horas +" horas " + minutos  +" minutos"  +segumdos + "segundos");
-
-
-    
-
+    return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
+}
